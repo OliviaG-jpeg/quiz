@@ -1,3 +1,8 @@
+<div class="row">
+<% @products.each do |product| %>
 <h1><%= @product.name %></h1>
 <h2>- <%= @product.brand %></h2>
 <h2><%= @product.description %></h2>
+<% end %>
+</div>
+<h1><%= link_to 'Add a New Product', new_product_path %></h1>
