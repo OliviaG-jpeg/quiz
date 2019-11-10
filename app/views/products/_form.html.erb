@@ -1,0 +1,9 @@
+<div class="form">
+<%= simple_form_for @product do |f| %>
+  <%= f.input :name %>
+  <%= f.input :brand %>
+  <%= f.input :description %>
+  <br />
+  <%= f.submit 'Add product' %>
+<% end %>
+</div>
